@@ -1,0 +1,32 @@
+%clearfix {
+	&:after, &:before {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+@mixin transition($prop, $time) {
+	-webkit-transition: $prop $time;
+	-o-transition: $prop $time;
+	transition: $prop $time;
+}
+
+@mixin fira($style: 'regular') {
+	@if $style == 'regular' {
+		font-family: 'fira_sansregular';
+	} @else if ($style == 'bold') {
+		font-family: 'fira_sansbold';
+		} @else if ($style == 'light') {
+			font-family: 'fira_sanslight';
+			} @else if ($style == 'medium') {
+				font-family: 'fira_sansmedium';
+			}
+}
+
+@mixin opensans($style: 'regular') {
+	@if $style == 'regular' {
+			font-family: 'open_sansregular';
+		} @else if ($style == 'bold') {
+			font-family: 'open_sansbold';
+			}
+}

@@ -1,0 +1,136 @@
+/* Header */
+.header {
+	height: 80px;
+	padding: 10px 0;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	margin-bottom: 25px;
+}
+
+.header-leftside {
+	width: 25%;
+	float: left;
+}
+
+.leftside__link {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	color: $darkgrey;
+}
+
+.avatar {
+	width: 62px;
+	height: 62px;
+	border: 2px solid rgb(215, 215, 215);
+	-webkit-border-radius: 31px;
+	-moz-border-radius: 31px;
+	border-radius: 31px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.avatar-img {
+	max-height: 62px;
+	max-width: 62px;
+}
+
+.avatar-text {
+	display: inline-block;
+	padding-left: 15px;
+	vertical-align: middle;
+	font-size: 18px;
+	margin: 0;
+	font-weight: normal;
+}
+
+.header-rightside {
+	width: 20%;
+	float: right;
+	text-align: right;
+	padding: 17px 0;
+	position: relative;
+}
+
+.temporary-contact-list {
+	margin-top: 22px;
+}
+
+.my-contacts {
+	@include fira('bold');
+	color: $blue;
+	line-height: 28px;
+	display: inline-block;
+	background: url('../img/decor/border.png') repeat-x bottom;
+}
+
+.header-rightside:hover .my-contacts {
+	color: $red;
+	background: url('../img/decor/border-hover.png') repeat-x bottom;
+}
+/* Dropdown */
+.my-contacts-list {
+	display: block;
+	width: 290px;
+	position: absolute;
+	text-align: left;
+	top: 60px;
+    background: #fff;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    padding: 10px 20px;
+    z-index: 10;
+    left: -9999px;
+}
+
+.header-rightside:hover .my-contacts-list {
+	left: -20px;
+}
+
+/* Triangle at the top */
+.triangle {
+	position: absolute;
+	height: 10px;
+	width: 20px;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #dedede;
+	left: 50%;
+    top: -21px;
+    transform: translateX(-50%);
+}
+
+.triangle:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+	left: -10px;
+    top: -9px;
+}
+
+.contacts-list-item {
+	margin-bottom: 5px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contacts-list-item-link {
+	@include fira('light');
+	text-decoration: none;
+	line-height: 28px;
+	color: $darkgrey;
+}
+
+.my-contacts-list .fa {
+	color: $blue;
+}

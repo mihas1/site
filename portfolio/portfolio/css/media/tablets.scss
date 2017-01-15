@@ -1,0 +1,58 @@
+@media screen and (max-width: 769px) {
+	.container {
+		width: 480px;
+	}
+
+	.wrapper, .footer {
+		min-width: 480px;
+	}
+
+	.header-leftside, .header-rightside {
+		width: 50%;
+	}
+
+	.header-rightside:hover .my-contacts-list {
+	    left: -55px;
+	}
+
+	.aside, .main {
+	    width: 100%;
+	    float: none;
+	}
+
+	.nav-list-item {
+	    display: inline-block;
+	}
+
+	.main-pic {
+	    float: none;
+	    margin: 0 auto;
+	}
+
+	.main-about {
+		float: none;
+	    width: 90%;
+	    margin: 0 auto;
+	}
+
+	.main-text {
+	    height: auto;
+	}
+
+	.main .main-h2 {
+		margin-left: 24px;
+	}
+
+	.main__career-left {
+    	float: none;
+	}
+
+	.main__career-right {
+		margin: 20px auto 0;
+		float: none;
+	}
+
+	.main-pic, .main__career-img {
+	    margin: 0 auto;
+	}
+}

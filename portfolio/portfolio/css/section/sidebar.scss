@@ -1,0 +1,46 @@
+/* Навигация / Navigation */
+.aside {
+	width: 23%;
+	float: left;
+	text-align: right;
+}
+
+.nav-list-item {
+	position: relative;	
+}
+
+.nav-item-link {
+	color: rgb(65, 65, 65);
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	padding: 9px 28px 8px 0;
+}
+
+.nav-item-link:hover {
+	color: $blue;
+	@include transition(all, .3s);
+}
+
+.active 
+	.nav-item-link,
+	.nav-item-link:active {
+		@include fira('bold');
+		color: $blue;;
+}
+
+.active:after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 6px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(50,203,233,1);
+	background: -moz-linear-gradient(top, rgba(50,203,233,1) 0%, rgba(51,183,220,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(50,203,233,1) 0%, rgba(51,183,220,1) 100%);
+	background: -o-linear-gradient(top, rgba(50,203,233,1) 0%, rgba(51,183,220,1) 100%);
+	background: -ms-linear-gradient(top, rgba(50,203,233,1) 0%, rgba(51,183,220,1) 100%);
+	background: linear-gradient(to bottom, rgba(50,203,233,1) 0%, rgba(51,183,220,1) 100%);
+}

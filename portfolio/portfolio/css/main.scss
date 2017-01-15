@@ -1,0 +1,21 @@
+$blue: #33c1e3;
+$darkgrey: #414141;
+$grey: #727272;
+$lightgrey: #f6f6f6;
+$red: #e85f61;
+
+@import "layout/normalize";
+@import "layout/fonts";
+@import "layout/mixins";
+@import "layout/adjustment";
+@import "section/header";
+@import "section/sidebar";
+@import "section/content";
+@import "section/footer";
+@import "section/about";
+@import "section/career";
+@import "section/portfolio";
+// @import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";

@@ -1,0 +1,75 @@
+@media screen and (max-width: 992px) {
+	.container {
+		width: 768px;
+	}
+
+	.wrapper, .footer {
+		min-width: 768px;
+	}
+
+	.header-rightside {
+		width: 16%;
+	}
+
+	.header-leftside {
+		width: 30%;
+	}
+
+	.aside {
+		width: 26%;
+	}
+
+	.nav-item-link {
+		padding: 9px 25px 8px 0;
+	}
+
+	.active:after {
+		right: 10px;
+    }
+	
+	.main {
+		width: 74%;
+	}
+
+	.main-pic, .main__career-img {
+		height: 180px;
+		width: 180px;
+		margin: 0;
+	}
+
+	.main-about {
+    	width: 365px;
+    }
+	
+	.main__career-right, .career-item-block {
+    	width: 330px;
+	}
+
+	.triangle {
+    	left: 80%;
+	}
+	
+	.header-rightside:hover .my-contacts-list {
+    	left: -166px;
+    }
+
+    .career-item-block:after, .career-item-block:before {
+    	left: -15px;
+	}
+
+	.career-item:after {
+    	left: -25px;
+	}
+	
+	.block-year {
+	    margin-right: 26px;
+	}
+
+	.career-item:hover .block-year {
+	    font-size: 14px;
+	}
+
+	.main-portfolio {
+	    margin-left: 0;
+	}
+}

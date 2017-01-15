@@ -1,0 +1,79 @@
+.menu {
+	background: url('../img/bg/menu.jpg') center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.menu-title {
+    padding: 90px 0 0 70px;
+    color: #fff;
+}
+
+.menu-accordeon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	@extend %clearfix;
+}
+
+.menu-accordeon__item {
+	float: left;
+	height: 100%;
+	@extend %clearfix;
+}
+
+.menu-accordeon__item-trigger {
+	height: 100%;
+	width: 80px;
+	display: block;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	float: left;
+}
+
+.menu-accordeon__item-trigger-text {
+	font-size: 40px;
+	font-family: 'gagalinregular';
+	color: #fff;
+	white-space: nowrap;
+	position: absolute;
+	top: 50%;
+	height: 80px;
+	margin-top: -40px;
+	width: 650px;
+	left: 50%;
+	margin-left: -314px;
+	transform: rotate(-90deg);
+	text-align: center;
+	transition: .5s;
+}
+
+.menu-accordeon__item-block {
+	background-color: rgba(#2f3234, .93);
+	width: 0;
+	float: left;
+	height: 100%;
+	transition: .5s;
+	overflow: hidden;
+}
+
+.menu-accordeon__item-block-text {
+	font-size: 14px;
+	color: #fff;
+	width: 540px;
+	padding: 60px 35px 0;
+}
+
+.menu-accordeon__active {
+
+	.menu-accordeon__item-trigger-text {
+		color: $yellow;
+	}
+
+	.menu-accordeon__item-block {
+		width: 540px;
+	}
+}

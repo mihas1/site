@@ -1,0 +1,19 @@
+%clearfix {
+	&:after, &:before {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin ubuntu($style: 'regular') {
+	@if $style == 'regular' {
+		font-family: 'ubunturegular';
+	} @else if ($style == 'bold') {
+		font-family: 'ubuntubold';
+		} @else if ($style == 'light') {
+			font-family: 'ubuntulight';
+			} @else if ($style == 'medium') {
+				font-family: 'ubuntumedium';
+			}
+}

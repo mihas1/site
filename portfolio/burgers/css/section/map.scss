@@ -1,0 +1,62 @@
+.map-content {
+	width: 100%;
+	height: calc(100% - 60px);
+}
+
+.footer {
+	height: 60px;
+	background: url('../img/bg/footer.jpg') center no-repeat;
+	background-size: cover;
+
+	.container {
+		@extend %clearfix;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+	}
+}
+
+.footer-text {
+	width: 50%;
+	float: left;
+	font-size: 14px;
+}
+
+.footer-adress {
+	display: block;
+	color: #fff;
+}
+
+.footer-tel {
+	color: #e45028;
+	@include ubuntu('bold');
+}
+
+.footer-socials {
+	width: 170px;
+	float: right;
+	padding-top: 10px;
+}
+
+.socials-item {
+	display: inline-block;
+	padding: 0px 5px;
+
+	&:hover {
+		.socials-pic {
+			fill: #fff;
+		}
+	}
+}
+
+.socials-link {
+	display: block;
+	font-size: 0;
+}
+
+.socials-pic {
+	width: 20px;
+	height: 20px;
+	fill: #5a5a5a;
+}

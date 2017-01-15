@@ -1,0 +1,72 @@
+/* About */
+.main-pic {
+	height: 230px;
+	width: 230px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border: 5px solid rgb(255, 255, 255);
+	overflow: hidden;
+	float: left;
+	margin-left: 35px;
+}
+
+.main-img {
+	height: 100%;
+	width: 100%;
+}
+
+.main-about {
+	width: 380px;
+	float: right;
+}
+
+.main-text {
+	height: 300px;
+	overflow: auto;
+	margin-bottom: 33px;
+}
+
+.main-text p {
+	@include fira('light');
+	color: rgb(100, 100, 100);
+}
+
+.about-page {
+	float: right;
+	margin-bottom: 72px;
+}
+
+.button-block {
+	display: inline-block;
+	border: 2px solid $red;
+	border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+}
+
+.button-block__link {
+	@include opensans('bold');
+	font-size: 14px;
+	display: inline-block;
+	padding: 7px 10px 10px 14px;
+}
+
+.about-page__download-link {
+	color: $red;
+}
+
+.button-block:hover {
+	background-color: $red;
+	@include transition(all, .5s);
+}
+
+.button-block:hover .about-page__download-link {
+	color: #fff;
+	@include transition(all, .5s);
+}
+
+.fa {
+	padding-right: 10px;
+	vertical-align: middle;
+}

@@ -1,0 +1,82 @@
+.reviews {
+	background: $black no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.reviews__list {
+	height: 100%;
+	@extend %clearfix;
+}
+
+.reviews__list-item {
+	height: 50%;
+	width: 25%;
+	float: left;
+
+	&:hover {
+
+		.reviews__block-hover {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+	}
+}
+
+.reviews__block {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.reviews__block-pic {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	filter: grayscale(100%);
+}
+
+.reviews__block-hover {
+	background-color: rgba(#141414, .7);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	transform: scale(.9);
+	opacity: 0;
+	transition: .5s;
+	color: #fff;
+	padding: 50px 20px;
+	font-size: 14px;
+}
+
+.block-hover__title {
+	font-family: 'gagalinregular';
+	padding-bottom: 25px;
+	display: block;
+}
+
+.block-hover__text {
+	overflow: hidden;
+	width: 100%;
+	height: 49%;
+	position: relative;
+}
+
+.block-hover__button {
+	background-color: #2f3234;
+	color: #fff;
+	font-size: 13px;
+	text-transform: uppercase;
+	@include ubuntu('medium');
+	padding: 10px 16px;
+    margin-top: 15px;
+	// position: absolute;
+}

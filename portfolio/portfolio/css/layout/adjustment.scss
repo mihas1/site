@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	@include fira;
+	background-color: $lightgrey;
+	font-size: 18px;
+	color: $darkgrey;
+}
+
+body, ul, p {
+	padding: 0;
+	margin: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Основные классы / Main classes */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	min-width: 940px;
+}
+
+.wrapper:after {
+	content: "";
+	display: block;
+	position: relative;
+	height: 50px; 
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+	@extend %clearfix; 
+}

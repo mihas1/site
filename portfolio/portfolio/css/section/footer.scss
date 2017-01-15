@@ -1,0 +1,72 @@
+/* Футер / Footer */
+.footer {
+	background-color: #414141;
+	height: 50px;
+	margin-top: -50px;
+	position: relative;
+	min-width: 940px;
+}
+
+.copyright {
+	float: left;
+}
+
+.copyright-text {
+	@include fira('light');
+	font-size: 14px;
+	color: rgb(156, 156, 156);
+	padding-top: 18px;
+	display: inline-block;
+}
+
+/* Кнопки соц-сетей */
+.social {
+	float: right;
+	padding-top: 10px;
+}
+
+.social-list {
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.social-list-item {
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	margin-right: 6px;
+}
+
+.social-link {
+	display: block;
+	background-image: url(../img/icons/spritesheet-social.png);
+    background-repeat: no-repeat;
+    outline: none;
+	width: 31px;
+	height: 30px;
+}
+
+.fb {
+    background-position: -4px -4px;
+}
+
+.fb:hover {
+    background-position: -43px -4px;
+}
+
+.vk {
+    background-position: -82px -4px;
+}
+
+.vk:hover {
+    background-position: -82px -42px;
+}
+
+.tw {
+    background-position: -4px -42px;
+}
+
+.tw:hover {
+    background-position: -43px -42px;
+}

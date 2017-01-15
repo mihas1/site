@@ -1,0 +1,102 @@
+.team {
+	background: url('../img/bg/team.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.team-content {
+	float: right;
+	width: 50%;
+	min-height: 100%;
+	background-color: rgba(#2f3234,.93);
+	padding: 0 80px 0 70px;
+}
+
+.team-title {
+	margin-top: 100px;
+}
+
+.accordeon-item {
+	margin-bottom: 20px;
+}
+
+.accordeon-trigger {
+	color: #fff;
+	font-family: 'gagalinregular';
+	font-size: 14px;
+	transition: all .5s;
+	position: relative;
+	margin-bottom: 15px;
+	display: inline-block;
+
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 0;
+		height: 0;
+		border: 6px solid $yellow;
+		border-bottom: none;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		left: -20px;
+		top: 7px;
+		transform: rotate(0deg);
+		transition: .5s;
+	}
+}
+
+.team-accordeon {
+	padding-left: 20px;
+}
+
+.accordeon-block {
+	color: #fff;
+	font-size: 14px;
+	height: 0;
+	overflow: hidden;
+	transition: 1s;
+}
+
+.accordeon-pic, .accordeon-info {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.accordeon-pic {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: url('../img/persons/james.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.accordeon-info {
+	width: 60%;
+    margin-left: 18px;
+}
+
+.accordeon-info-name {
+	@include ubuntu('bold');
+	margin-bottom: 10px;
+    display: inline-block;
+}
+
+.accordeon-info-text {
+	line-height: 24px;
+}
+
+.team-accordeon__active {
+	.accordeon-trigger {
+		color: $yellow;
+	}
+	.accordeon-trigger:before {
+		transform: rotate(-180deg);
+	}
+	
+	.accordeon-block {
+		height: 100px;
+		margin-bottom: 30px;
+	}
+
+}

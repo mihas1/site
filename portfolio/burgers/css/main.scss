@@ -1,0 +1,16 @@
+$black: #2f3234;
+$red: #e45028;
+$yellow: #f9b43b;
+$orange: #f08c33;
+
+@import "layout/fonts";
+@import "layout/mixins";
+@import "layout/adjustment";
+@import "section/hello";
+@import "section/best";
+@import "section/burgers";
+@import "section/team";
+@import "section/menu";
+@import "section/reviews";
+@import "section/delivery";
+@import "section/map";
