@@ -174,6 +174,11 @@ $(function () {
 			})
 		}
 	};
+
+  bioEp.init({
+    html: '<div id="content">Hi there, Im exit popup</div>',
+    css: '#content {font-size: 30px;height: 100%;display: flex;align-items: center;justify-content: center;}'
+  });
 });
 
 
